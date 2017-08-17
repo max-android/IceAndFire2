@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerCharacters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:scrollbars="vertical"
+
+    tools:context="exampleprilognew.ru.iceandfire2.screen.BookListCharacters.BookListCharacterActivity"
+    tools:showIn="@layout/activity_book_list_character">
+
+</android.support.v7.widget.RecyclerView>

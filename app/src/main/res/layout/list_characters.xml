@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rlCharacter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+
+    >
+
+    <TextView
+        android:id="@+id/tvNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/padding_start"
+        android:layout_marginStart="@dimen/padding_start"
+        android:layout_marginTop="@dimen/padding_element_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_book"
+        android:textColor="@color/textColor"
+        android:text="@string/name_of_character"
+        />
+
+    <TextView
+        android:id="@+id/tvNameCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvNameTitle"
+        android:layout_alignBottom="@+id/tvNameTitle"
+        android:layout_marginRight="@dimen/padding_end"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColorActive"
+        tools:text="@string/name_of_character"
+        android:layout_alignTop="@+id/tvNameTitle" />
+
+    <TextView
+        android:id="@+id/tvGenderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_element_vertical"
+        android:text="@string/gender"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:layout_below="@+id/tvNameTitle"
+        android:layout_marginEnd="@dimen/padding_start"
+        android:layout_marginStart="@dimen/padding_start"
+         />
+
+
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_end"
+        android:layout_alignBottom="@+id/tvGenderTitle"
+        android:layout_toRightOf="@+id/tvGenderTitle"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColorActive"
+        tools:text="@string/release_date"
+        />
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGenderTitle"
+        android:layout_marginTop="@dimen/padding_element_vertical"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/textColor"
+        android:text="@string/dignity"
+        android:layout_marginEnd="@dimen/padding_start"
+        android:layout_marginStart="@dimen/padding_start"
+        />
+    <TextView
+        android:id="@+id/tvDignity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/textColorActive"
+        tools:text="@string/dignity"
+        android:layout_marginRight="@dimen/padding_end"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:layout_alignBottom="@+id/tvTitle"
+        />
+</RelativeLayout>
